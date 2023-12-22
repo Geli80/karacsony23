@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Password Checker</title>
+  <script>
+    function checkPassword() {
+      var password = document.getElementById("password").value;
+      var message;
+
+      if (password === "pKrcs23") {
+        message = "Kanapé mögött";
+      } else if (password === "nyKrcs23") {
+        message = "Hűtőtető, kosár (U.I.: Vigyázz, törékeny! )";
+      } else {
+        message = "Helytelen jelszó!";
+      }
+
+      alert(message);
+    }
+  </script>
+</head>
+<body>
+  <label for="password">Password:</label>
+  <input type="password" id="password">
+  <button onclick="checkPassword()">Submit</button>
+</body>
+</html>
